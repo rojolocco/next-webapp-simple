@@ -1,0 +1,23 @@
+services:
+  next-app:
+    container_name: team
+    image: guimarseguros/team-app:latest
+    restart: always
+    ports:
+      - "3001:3000"
+    environment:
+      NODE_ENV: production
+      HOSTNAME: "0.0.0.0"
+      PORT: 3000
+    volumes:
+      - team-next-app-data:/app/data
+    networks:
+      - caddy_network
+
+volumes:
+  team-next-app-data:
+    driver: local
+
+networks:
+  caddy_network:
+    external: true

@@ -1,0 +1,18 @@
+# docker
+Dockerfile
+Dockerfile.dev
+docker-compose.yml
+docker-compose.dev.yml
+
+# node
+node_modules
+
+#otros
+README.md
+LICENSE
+.next
+.git
+jest-cache
+jest.config.js
+swc
+.babelrc
