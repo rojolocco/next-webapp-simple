@@ -12,7 +12,3 @@ README.md
 LICENSE
 .next
 .git
-jest-cache
-jest.config.js
-swc
-.babelrc
